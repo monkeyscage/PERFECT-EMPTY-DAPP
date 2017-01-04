@@ -1,0 +1,101 @@
+<!doctype>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://arkdao.com/blockies-master/blockies.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="web3.js"></script>
+<script src="util.js"></script>
+<script src="AlphaLibrary.js"></script>
+<script src="AlphaPanel.js"></script>
+</head>
+<body>
+
+
+	
+
+    <div id="topheader">	
+	<div id="logocontainer"><img id="logo" src="img/logo.png"></div>
+        <div id="" class="menubutton" onclick="window.open('https://github.com/monkeyscage','_blank')">&#60;&#47;&#62;</div>
+        <div class="menusinglebutton" style="margin-right: 20px;" onclick="window.open('http://etherscape.io/alphalayer.html?list=1&all=1','_blank')">
+           <img src="img/stringbutton.png" style=" height: 40px; ">
+        </div>
+        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=2&all=1','_blank')"><img src="img/addrbutton.png" class="menubuttonimage"></div>
+        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=3&all=1','_blank')"><img src="img/uintbutton.png" class="menubuttonimage"></div>
+        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=4&all=1','_blank')"><img src="img/boolbutton.png" class="menubuttonimage"></div>
+    </div>
+
+    <div id="msg" class="display">
+       <div id="loading"></div>
+       <div id="msgcnt">Message</div>
+       <input id="msgclose"type="submit" class="buttonSubmit" value="Hide">
+       <div style="clear:both"></div>
+    </div>
+
+<div id="page">
+   
+    
+
+   <div id="intro" class="tab">
+       <div id="coinsettings" class="tabright">
+          <div id='DSocialwallet' class='walleticon30'></div>
+          <div id="address"></div>
+          <div style="clear: both;"></div>
+          <div id="stringcounter" class="counter">100 exposed Layers</div><div id="stringcontainer" class="container"></div><div style="clear:both;"></div>
+          <div id="uintcounter" class="counter">100 exposed Layers</div><div id="uintcontainer" class="container"></div><div style="clear:both;"></div>
+          <div id="boolcounter" class="counter">100 exposed Layers</div><div id="boolcontainer" class="container"></div><div style="clear:both;"></div>
+          <div id="addresscounter" class="counter">100 exposed Layers</div><div id="addresscontainer" class="container"></div><div style="clear:both;"></div>         
+       </div>
+   </div>
+
+    <div id="listtab" class="tab">
+        <div id="stringlistcontainer"  class="list">
+           <div id="stringlisttabamount" class="listamount"></div>
+        </div>
+        <div id="boollistcontainer"  class="list">
+           <div id="boollisttabamount" class="listamount"></div>
+        </div>
+        <div id="uintlistcontainer"  class="list">
+           <div id="uintlisttabamount" class="listamount"></div>
+        </div>
+        <div id="addresslistcontainer"  class="list>
+           <div id="addresslisttabamount" class="listamount"></div>
+        </div>
+    
+
+    <div id="my-coins" class='display'>	
+       <div style="padding: 20px;">
+          <div id="noWalletAlert" style="color: red; display: none;float: left;">No Wallet Connected</div>
+          <div style="float: left; width: 100%;">
+	      <div id="walletico" class="walleticon"></div>
+              <select id="wallets" name="wallets"></select>
+              <button id="refreshwallet" onclick='reloadWallet()'  title='REFRESH WALLET' class='inb2'>
+                 <img id="refreshwalletimage" src="img/reload2.png">
+              </button>
+              <div id="balance">Balance:</div>
+              <div style="clear: both;"></div>
+          </div>
+         
+       </div>
+       <div style="clear: both;"></div>
+    </div>
+
+ </div>  
+   
+    <div id="problem" class="display">
+        <div style="color: red; padding: 20px;">YOU HAVE SOME PROBLEMS &#9760; THIS IS A DECENTRALIZED APPLICATION BUILT UPON ETHEREUM. YOU NEED THE BLOCKCHAIN!</div>
+    </div>
+
+</div>
+
+<div id="footer">	
+	<div class="author" onclick="window.open('https://github.com/monkeyscage')" style="float: left;">
+           <img alt="GITHUB" title="GITHUB Repository" class="authorlogo" src="img/gitter.png" style="">
+        </div>
+        <div class="author">
+           <img alt="CEO/DEV maxxflyer" title="DEV maxxflyer" class="authorlogo" src="http://openbackery.io/lizard.jpeg" style="margin-left: -15px;">
+        </div>
+    </div>
+<div id="mainlabel">CONTROL PANEL</div>
+</body>
+</html>
