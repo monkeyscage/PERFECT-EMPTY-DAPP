@@ -1,0 +1,295 @@
+body {
+	padding: 0px;
+	margin:0px;
+        background: black;
+	color: #777;
+	font-family: arial;
+	font-size: 20px;
+	
+}
+
+.display{
+        border-radius: 5px;
+        color: black;
+	background: white;
+	box-shadow: inset 0px 2px 7px #777;
+        -webkit-box-shadow: inset 0px 2px 7px #777;
+        -moz-box-shadow: inset 0px 2px 7px #777;
+        -o-box-shadow: inset 0px 2px 7px #777;
+	margin-bottom:20px;
+}
+
+.walleticon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 2px 5px, inset rgba(0, 0, 0, 0.3) 0 -2px 6px;
+}
+
+.menubutton{
+   width: 35px;
+   height:23px;
+   border-radius:50px;
+   background:white;
+   color:black;
+   font-size:10px;
+   float: right;
+   margin-top:17px;
+   margin-left: 2px;
+   margin-right: 20px;
+   padding-top:12px;
+   text-align: center;
+   cursor: pointer;
+}
+
+#topheader{
+    background: black;
+    height: 70px;
+}
+
+#listtab{
+    box-shadow: inset 0px 2px 7px #777;
+    -webkit-box-shadow: inset 0px 2px 7px #777;
+    -moz-box-shadow: inset 0px 2px 7px #777;
+    -o-box-shadow: inset 0px 2px 7px #777;
+    border-radius: 5px;
+    margin:20px;
+display: none; float: left;width: calc(100% - 40px);
+}
+
+#listtabtitle{
+   padding:20px;
+   font-size: 20px;
+}
+
+.listamount{
+padding: 20px 20px 20px 0;
+}
+
+.list{margin-bottom: 10px;float: left; padding-left: 20px;width: calc(100% - 20px);}
+
+.layercreator{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    float: right;
+    margin-left: 0px;
+    cursor:pointer;
+}
+
+.layercreator2{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    cursor:pointer;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 5px, inset rgba(0, 0, 0, 0.3) 0 0px 1px;
+}
+
+.minidisplay{
+    box-shadow: inset 0px 1px 6px #777;
+    -webkit-box-shadow: inset 0px 1px 6px #777;
+    -moz-box-shadow: inset 0px 1px 6px #777;
+    -o-box-shadow: inset 0px 1px 6px #777;
+    background: #f2f2f2;
+}
+
+.minidisplayred{
+     box-shadow: inset 0px 1px 6px #777;
+    -webkit-box-shadow: inset 0px 1px 6px #777;
+    -moz-box-shadow: inset 0px 1px 6px #777;
+    -o-box-shadow: inset 0px 1px 6px #777;
+    background: #fff2f2;
+}
+
+.minidisplaygreen{
+    box-shadow: inset 0px 1px 6px #777;
+    -webkit-box-shadow: inset 0px 1px 6px #777;
+    -moz-box-shadow: inset 0px 1px 6px #777;
+    -o-box-shadow: inset 0px 1px 6px #777;
+    background: #f2fff2;
+}
+
+.minidisplayblue{
+    box-shadow: inset 0px 1px 6px #777;
+    -webkit-box-shadow: inset 0px 1px 6px #777;
+    -moz-box-shadow: inset 0px 1px 6px #777;
+    -o-box-shadow: inset 0px 1px 6px #777;
+    background: #f2f2ff;
+}
+
+.author{
+    float: right;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.authorlogo{
+    height: 100%;
+}
+
+.menuImage{width: 25px;}
+
+.settingsminitab{
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    width:29%;
+    border: 0px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.layeraddr{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.walleticon30 {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 5px, inset rgba(0, 0, 0, 0.3) 0 0px 1px;
+}
+
+.counter{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container{
+width: 100%;
+margin-bottom: 15px;
+float: left;
+}
+
+.menusinglebutton{
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menubuttonimage{width: 40px;}
+
+#logocontainer{
+   padding-top:20px;
+   padding-left: 0px;
+   float: left;
+}
+
+#logo{
+   margin-left: 20px;
+   height: 30px;
+}
+
+#msg{
+    display: none;
+    padding: 20px;
+    margin:20px; "
+}
+
+#loading{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-image:url('http://andrea.overgrid.com/loading.gif');
+    background-size: 40px;
+}
+
+#msgcnt{
+float: left;margin-left: 20px; margin-top: 8px;
+}
+
+#msgclose{
+font-size: 18px; float: right;margin-right: 0px;margin-left: 20px;  margin-top: 8px;
+}
+
+#coinsettings{
+padding: 0 20px 0 20px; display: none; width: calc(100% - 42px); z-index: 1101;
+}
+
+#DSocialwallet{
+margin-left: 0px; margin-top: 26px; margin-bottom: 20px; float: left; cursor: pointer;float: left;
+}
+
+#address{
+margin-top: 26px; margin-left: 10px; font-size: 20px; color: black; font-family: arial; padding-top: 4px; padding-bottom: 6px; float: left;
+}
+
+#my-coins{
+margin: 20px 20px 20px 20px; margin-left: 20px;float:left; width: calc(100% - 40px);  border: solid 0px black; padding-bottom: 20px;
+}
+
+#walletico{
+float: left;  margin-right: 10px; margin-top: 2px;cursor: pointer;
+}
+
+#wallets{
+    cursor: pointer; float: left;
+    margin-left: 10px;
+    font-size: 28px;
+    padding: 5px;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0 2px 6px, inset rgba(0, 0, 0, 0.3) 0 2px 6px;
+    border-radius: 3px;
+    background: #f2f2f2;
+    border: 0px;
+    border-radius: 3px;
+}
+
+#refreshwallet{
+    padding: 5px;
+    float: right;cursor: pointer;
+    margin-right: 0px;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 2px 3px, inset rgba(0, 0, 0, 0.3) 0 2px 3px;
+    border: 0px;
+}
+
+#refreshwalletimage{
+width: 33px; 
+}
+
+#balance{
+color: grey; font-size: 28px; margin-top: 6px; margin-left: 10px; float: right; cursor: pointer;
+}
+
+#problem{
+border: 0px; padding: 0px; margin: 20px; width: calc(100% - 40px); margin-bottom: 40px;
+}
+
+#footer{
+background: black;  height: 72px;
+}
+
+#mainlabel{
+position: absolute; margin: auto; text-align:center;font-size:18px; color:#ddd; top:25px; left: calc((100% / 2) - 90px);
+}
+
+#page{
+background: white;float: left; width: 100%;
+}
