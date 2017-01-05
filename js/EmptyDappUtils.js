@@ -1,17 +1,5 @@
 
 
-function gup( name, url ) {
-      if (!url) url = location.href;
-      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-      var regexS = "[\\?&]"+name+"=([^&#]*)";
-      var regex = new RegExp( regexS );
-      var results = regex.exec( url );
-      return results == null ? null : results[1];
-    }
-
-
-
-
 function createIcon(divid,addr){
 
 
@@ -122,13 +110,21 @@ function  reloadWallet(){
                    }else{
                       var temp=""+web3.fromWei(data, "ether");
                       $("#balance").text(temp.substring(0, 8)+" ETH");
+                      loadAvatar();
                    }
                    });
                    createIcon("#walletico",web3.eth.accounts[selectedwallet]);
 		}else{
 	           $("#noWalletAlert").show();
                    $("#my-coins").hide();
+       
                 }	
+}
+
+
+function loadAvatar(){
+loadAltAlphaImage("#avatarimage",6,web3.eth.accounts[$("#wallets").val()],"img/avatar.jpg");
+loadAltAlphaString("#username",1,web3.eth.accounts[$("#wallets").val()],"User Unknown");
 }
 
 function checkweb3(){
@@ -143,6 +139,7 @@ function checkweb3(){
     //$.getScript('deploymentpan.js');
     console.log("dep found");
     checkWallet();
+    
     start();
     } else if (typeof Web3 !== 'undefined') {
 
@@ -168,3 +165,10 @@ function checkweb3(){
 
 
 }
+
+$(document).ready(function(){
+
+$("#avatarimage").click(function(){window.open('http://etherscape.io/alphalayer.html?str=1,6&w='+web3.eth.accounts[$('#wallets').val()],'_blank');});
+
+$(".menuitem").click(function(event){$(".menuitem").css("border-bottom" , "solid 7px transparent"); $("#"+$(event.target).attr('id')).css("border-bottom" , "solid 7px white");menuClick($(event.target).attr('index'));});
+});
