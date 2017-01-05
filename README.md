@@ -49,6 +49,15 @@ Just grab the code and enjoy.
 Do you have more ideas?
 
 
+BLOCKIES LIBRARY COMES FROM HERE:
+
+https://github.com/download13/blockies
+
+WEB3.js COMES FROM HERE:
+
+https://github.com/ethereum/web3.js/
+
+
 
 
 
