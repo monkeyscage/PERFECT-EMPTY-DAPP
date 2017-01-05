@@ -2,12 +2,13 @@
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/web3.js"></script>
-<script src="js/blockies.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="js/EmptyDappUtils.js"></script>
-<script src="js/AlphaLibrary.js"></script>
-<script src="js/mainDapp.js"></script>
+<script src="http://arkdao.com/blockies-master/blockies.js"></script>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script type="text/javascript" src="web3.js"></script>
+<script src="utils2.js"></script>
+<script src="AlphaLibrary.js"></script>
+<script src="miniDappInterface.js"></script>
+<script src="mainDapp.js"></script>
 </head>
 <body class="bgcol">
 
@@ -31,8 +32,11 @@
     <div id="msg" class="display">
        <div id="loading"></div>
        <div id="msgcnt">Message</div>
-       <input id="msgclose"type="submit" class="buttonSubmit" value="Hide">
+       <input id="msgclose"type="submit" class="mainbutton" value="Hide" onclick="$('#msg').hide()">
        <div style="clear:both"></div>
+    </div>
+<div id="problem" class="display">
+        <div style="color: red; padding: 20px;">YOU HAVE SOME PROBLEMS &#9760; THIS IS A DECENTRALIZED APPLICATION BUILT UPON ETHEREUM. YOU NEED THE BLOCKCHAIN!</div>
     </div>
 
 <div id="page">
@@ -40,7 +44,11 @@
     
 
   
-    <div id="home" class="tab" style="display: block;">HOME PAGE</div>
+    <div id="home" class="tab" style="display: block;">HOME PAGE
+    <div id="set" class="io"><button class="mainbutton" onclick="set()">SET STRING</button><input id="textinput" type="text"><div id="trans1" class="transcontainer" ><img class="trans" src="img/transacting.png"></div><div style="clear: both"></div></div>
+    <div id="get" class="io"><button class="mainbutton" onclick="get()">GET STRING</button><div id="textoutput">?</div><div id="trans2" class="transcontainer" ><img class="trans" src="img/transacting.png"></div><div style="clear: both"></div></div>
+    <br><br><br>
+    </div>
     <div id="faq" class="tab">FAQ PAGE</div>
 
     <div id="my-coins" class='display'>	
@@ -62,9 +70,7 @@
 
  </div>  
    
-    <div id="problem" class="display">
-        <div style="color: red; padding: 20px;">YOU HAVE SOME PROBLEMS &#9760; THIS IS A DECENTRALIZED APPLICATION BUILT UPON ETHEREUM. YOU NEED THE BLOCKCHAIN!</div>
-    </div>
+    
 
 </div>
 
