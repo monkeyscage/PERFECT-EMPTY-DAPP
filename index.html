@@ -2,27 +2,30 @@
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="http://arkdao.com/blockies-master/blockies.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="web3.js"></script>
-<script src="util.js"></script>
-<script src="AlphaLibrary.js"></script>
-<script src="AlphaPanel.js"></script>
+<script src="js/blockies.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/web3.js"></script>
+<script src="js/EmptyDappUtils.js"></script>
+<script src="js/AlphaLibrary.js"></script>
+<script src="js/mainDapp.js"></script>
 </head>
-<body>
+<body class="bgcol">
 
 
 	
 
-    <div id="topheader">	
+    <div id="topheader" class="bgcol">	
 	<div id="logocontainer"><img id="logo" src="img/logo.png"></div>
-        <div id="" class="menubutton" onclick="window.open('https://github.com/monkeyscage','_blank')">&#60;&#47;&#62;</div>
-        <div class="menusinglebutton" style="margin-right: 20px;" onclick="window.open('http://etherscape.io/alphalayer.html?list=1&all=1','_blank')">
-           <img src="img/stringbutton.png" style=" height: 40px; ">
+        <div id="menucontainer">
+        <div id="menusubcontainer">
+        <div id="menu1" index="1" class="menuitem" style="border-bottom: solid 7px white;">HOME</div>
+        <div id="menu2" index="2" class="menuitem lastmenuitem">FAQ</div>
         </div>
-        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=2&all=1','_blank')"><img src="img/addrbutton.png" class="menubuttonimage"></div>
-        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=3&all=1','_blank')"><img src="img/uintbutton.png" class="menubuttonimage"></div>
-        <div class="menusinglebutton" onclick="window.open('http://etherscape.io/alphalayer.html?list=4&all=1','_blank')"><img src="img/boolbutton.png" class="menubuttonimage"></div>
+        </div>
+        <div id="avatarcontainer">
+        <div id="username">Unknown</div>
+        <img id="avatarimage">
+        </div>
     </div>
 
     <div id="msg" class="display">
@@ -36,32 +39,9 @@
    
     
 
-   <div id="intro" class="tab">
-       <div id="coinsettings" class="tabright">
-          <div id='DSocialwallet' class='walleticon30'></div>
-          <div id="address"></div>
-          <div style="clear: both;"></div>
-          <div id="stringcounter" class="counter">100 exposed Layers</div><div id="stringcontainer" class="container"></div><div style="clear:both;"></div>
-          <div id="uintcounter" class="counter">100 exposed Layers</div><div id="uintcontainer" class="container"></div><div style="clear:both;"></div>
-          <div id="boolcounter" class="counter">100 exposed Layers</div><div id="boolcontainer" class="container"></div><div style="clear:both;"></div>
-          <div id="addresscounter" class="counter">100 exposed Layers</div><div id="addresscontainer" class="container"></div><div style="clear:both;"></div>         
-       </div>
-   </div>
-
-    <div id="listtab" class="tab">
-        <div id="stringlistcontainer"  class="list">
-           <div id="stringlisttabamount" class="listamount"></div>
-        </div>
-        <div id="boollistcontainer"  class="list">
-           <div id="boollisttabamount" class="listamount"></div>
-        </div>
-        <div id="uintlistcontainer"  class="list">
-           <div id="uintlisttabamount" class="listamount"></div>
-        </div>
-        <div id="addresslistcontainer"  class="list>
-           <div id="addresslisttabamount" class="listamount"></div>
-        </div>
-    
+  
+    <div id="home" class="tab" style="display: block;">HOME PAGE</div>
+    <div id="faq" class="tab">FAQ PAGE</div>
 
     <div id="my-coins" class='display'>	
        <div style="padding: 20px;">
@@ -88,14 +68,14 @@
 
 </div>
 
-<div id="footer">	
+<div id="footer" class="bgcol">	
 	<div class="author" onclick="window.open('https://github.com/monkeyscage')" style="float: left;">
            <img alt="GITHUB" title="GITHUB Repository" class="authorlogo" src="img/gitter.png" style="">
         </div>
+        <div id="footermessage">copyright PERFECT EMPTY DAPP</div>
         <div class="author">
            <img alt="CEO/DEV maxxflyer" title="DEV maxxflyer" class="authorlogo" src="http://openbackery.io/lizard.jpeg" style="margin-left: -15px;">
         </div>
     </div>
-<div id="mainlabel">CONTROL PANEL</div>
 </body>
 </html>
