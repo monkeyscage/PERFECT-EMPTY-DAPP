@@ -1,7 +1,6 @@
 body {
 	padding: 0px;
 	margin:0px;
-        background: black;
 	color: #777;
 	font-family: arial;
 	font-size: 20px;
@@ -45,7 +44,6 @@ body {
 }
 
 #topheader{
-    background: black;
     height: 70px;
 }
 
@@ -128,8 +126,8 @@ padding: 20px 20px 20px 0;
 .author{
     float: right;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius:50%;
@@ -209,19 +207,21 @@ float: left;
 #msg{
     display: none;
     padding: 20px;
-    margin:20px; "
+    margin:20px; 
+    margin-top: 0px;
+border: solid 2px white;
 }
 
 #loading{
     float: left;
     width: 40px;
     height: 40px;
-    background-image:url('http://andrea.overgrid.com/loading.gif');
+    background-image:url('img/transacting.png');
     background-size: 40px;
 }
 
 #msgcnt{
-float: left;margin-left: 20px; margin-top: 8px;
+float: left;margin-left: 20px; margin-top: 12px; font-size: 16px;
 }
 
 #msgclose{
@@ -279,17 +279,133 @@ color: grey; font-size: 28px; margin-top: 6px; margin-left: 10px; float: right; 
 }
 
 #problem{
-border: 0px; padding: 0px; margin: 20px; width: calc(100% - 40px); margin-bottom: 40px;
+border: solid 2px white; padding: 0px; margin: 20px;  margin-top: 0px; width: calc(100% - 44px);
 }
 
 #footer{
-background: black;  height: 72px;
+  height: 72px;
 }
 
 #mainlabel{
-position: absolute; margin: auto; text-align:center;font-size:18px; color:#ddd; top:25px; left: calc((100% / 2) - 90px);
+position: absolute; margin: auto; text-align:center;font-size:18px; color:white; top:25px; left: calc((100% / 2) - 90px);
 }
 
 #page{
 background: white;float: left; width: 100%;
+}
+
+#username{
+float: left;
+color:white;
+font-size:18px;
+margin-right: 15px;
+margin-top:15px;
+}
+
+#avatarimage{
+float: left;
+border-radius:3px;
+width:40px; height:40px;
+margin-right: 20px;
+border:solid 2px white;
+margin-top:12px;
+cursor:pointer;
+}
+
+#avatarcontainer{
+float: right;
+}
+
+#menucontainer{
+    width: 180px;
+    position: absolute;
+    left: calc((100% /2) - 90px);
+}
+
+#menusubcontainer{
+   width: 160px;
+   margin: auto;
+   margin-top: 35px;
+}
+
+.menuitem{
+color:white;
+font-size: 20px;
+padding-bottom: 5px;
+border-bottom: 7px transparent white;
+float: left;
+cursor: pointer;
+margin-right: 40px;
+}
+
+.lastmenuitem{
+color:white;
+font-size: 20px;
+padding-bottom: 5px;
+border-bottom: 7px transparent white;
+float: left;
+cursor: pointer;
+margin-right: 0px;
+}
+
+.tab{
+padding: 20px;
+width: calc(100% - 40px);
+display: none;
+}
+
+.bgcol{
+background: red;
+}
+
+#footermessage{
+width: calc(100% - 170px);
+text-align: center;
+color: white;
+margin-top: 20px;
+float: left;
+}
+
+.mainbutton{
+float: left;
+padding:5px;
+border-radius:3px;
+margin-right: 20px;
+font-size: 20px;
+    margin-top: 20px;
+}
+
+#textinput{
+float: left;
+width:300px;
+padding:5px;
+border-radius:3px;
+margin-top: 20px;
+font-size: 20px;
+}
+
+#textoutput{
+float: left;
+padding:5px;
+border-radius:3px;
+margin-top: 20px;
+font-size: 20px;
+}
+
+.io{
+margin-top:20px;
+}
+
+.transcontainer{
+float: left;
+height: 36px;
+width: 36px;
+margin-left: 20px;
+display: none;
+}
+
+.trans{
+height: 36px;
+width: 36px;
+margin-top: 20px;
 }
