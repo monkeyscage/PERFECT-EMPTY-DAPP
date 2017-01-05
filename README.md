@@ -28,7 +28,7 @@ It took me a lot of time to get to this point.
 I like to think that a noob will upload it on his server and in few minutes he can start his dapps without too many troubles.
 
 
-The PERFECT AMPTY DAPP can be implemented with further libraries.
+The PERFECT EMPTY DAPP can be implemented with further libraries.
 
 Please HELP ME TO HELP the community.
 
