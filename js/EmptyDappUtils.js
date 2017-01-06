@@ -20,11 +20,7 @@ function createIcon(divid,addr){
 }
 
 function setMsg(color,msg,action){
-          
-		if(color=="green"){$("#msg").css({"border":"solid 3px white","background":"#dfd"});$("#msgclose").css("color","#green");$("#msgclose").show();}
-		if(color=="red"){$("#msg").css({"border":"solid 3px white","background":"#fdd"});$("#msgclose").css("color","#red");$("#msgclose").show();}
-		if(color=="orange"){$("#msg").css({"border":"solid 3px white","background":"#FFD16E"});$("#msgclose").css("color","#orange");$(".jump").hide();$("#msgclose").show();}
-		
+                $("#msg").css({"border":"solid 3px white","background":color});$("#msgclose").css("color",color);$("#msgclose").show();
 		$("#msgcnt").html(msg);
 		if(action=="start"){$("#loading").show();}
 	        if(action=="stop"){$("#loading").hide();}
