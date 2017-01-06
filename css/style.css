@@ -216,7 +216,7 @@ border: solid 2px white;
     float: left;
     width: 40px;
     height: 40px;
-    background-image:url('img/transacting.png');
+    background-image:url('../img/transacting.png');
     background-size: 40px;
 }
 
