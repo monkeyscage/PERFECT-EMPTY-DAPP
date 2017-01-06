@@ -33,7 +33,7 @@ function get(){
 }
 
 //we write to contract miniDapp.sol, calling the function setsimpleString() we also specify the wallet we use and the gas, and we prepare the onscreen messages and trigger the transaction manager
-function set(){console.log(web3.eth.accounts[selectedwallet]+" "+$("#wallets").val()+" "+selectedwallet+" "+$("#textinput").val());
+function set(){
    contracts['miniDapp'].contract.setsimpleString($("#textinput").val(),{from:""+web3.eth.accounts[selectedwallet], gas: 699999},function(err,transactionHash){
     if(err){console.log("Error: "+err);}else{
     //we show a "loading..." icon
