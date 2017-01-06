@@ -87,9 +87,6 @@ if(t>=120)t=0;
 }else{setTimeout(function() {checkTransaction(ob,hash,transaction,gas,endmessage);}, 4000);}
 });
 
-//}
-
-
 }
 
 
@@ -133,10 +130,14 @@ function  reloadWallet(){
 }
 
 
+function closeMsg(){$("#msg").hide();}
+
+
 function loadAvatar(){
 loadAltAlphaImage("#avatarimage",6,web3.eth.accounts[$("#wallets").val()],"img/avatar.jpg");
 loadAltAlphaString("#username",1,web3.eth.accounts[$("#wallets").val()],"User Unknown");
 }
+
 
 function checkweb3(){
 
