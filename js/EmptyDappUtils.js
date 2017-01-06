@@ -81,6 +81,8 @@ console.log("checking... "+hash);
         }
 
     }
+		  
+//will check ONLY 120 times!		  
 if(t>=120)t=0;
 }else{setTimeout(function() {checkTransaction(ob,hash,transaction,gas,endmessage);}, 4000);}
 });
