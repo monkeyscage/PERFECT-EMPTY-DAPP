@@ -150,6 +150,7 @@ function checkweb3(){
     $("#problem").hide();
     checkWallet();
     console.log("starting...");
+    connectAlphaLayer();
     start();
     } else if (typeof Web3 !== 'undefined') {
 
