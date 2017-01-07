@@ -1,7 +1,9 @@
-
+window.onload=function(e){checkweb3();} //don't remove
 
 $(document).ready(function (){
- checkweb3();    //don't remove
+  
+ // your code should go here
+ 
 });
 
 
