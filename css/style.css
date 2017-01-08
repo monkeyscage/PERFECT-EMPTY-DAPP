@@ -221,7 +221,7 @@ border: solid 2px white;
 }
 
 #msgcnt{
-float: left;margin-left: 20px;  font-size: 16px;
+float: left;margin-left: 20px; margin-top: 12px; font-size: 16px;
 }
 
 #msgclose{
