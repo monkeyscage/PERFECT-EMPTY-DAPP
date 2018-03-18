@@ -9,6 +9,28 @@
 <script src="js/AlphaLibrary.js"></script>
 <script src="js/miniDappInterface.js"></script>
 <script src="js/mainDapp.js"></script>
+<script>
+
+window.addEventListener('load', function() {
+
+  // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+  if (typeof web3 !== 'undefined') {
+    // Use Mist/MetaMask's provider
+    web3 = new Web3(web3.currentProvider);
+    $("#problem").hide();
+    checkWallet();
+    console.log("starting...");
+    connectAlphaLayer();
+    start();
+  } else {
+    console.log('No web3? You should consider trying MetaMask!')
+    // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+    web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+  }
+
+  // Now you can start your app & access web3 freely:
+
+});</script>
 </head>
 <body class="bgcol">
 
