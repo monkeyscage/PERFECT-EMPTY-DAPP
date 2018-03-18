@@ -130,6 +130,8 @@ function  reloadWallet(){
 }
 
 
+
+
 function closeMsg(){$("#msg").hide();}
 
 
