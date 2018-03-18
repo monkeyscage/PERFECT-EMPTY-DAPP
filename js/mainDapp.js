@@ -1,4 +1,4 @@
-window.onload=function(e){checkweb3();} //don't remove
+
 
 $(document).ready(function (){
   
