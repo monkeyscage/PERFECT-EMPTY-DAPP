@@ -139,41 +139,7 @@ loadAltAlphaString("#username",1,web3.eth.accounts[$("#wallets").val()],"User Un
 }
 
 
-function checkweb3(){
 
-
-    // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-    if (typeof web3 !== 'undefined' && typeof Web3 !== 'undefined') {
-
-    // Use Mist/MetaMask's provider
-    web3 = new Web3(web3.currentProvider);
-    $("#problem").hide();
-    checkWallet();
-    console.log("starting...");
-    connectAlphaLayer();
-    start();
-    } else if (typeof Web3 !== 'undefined') {
-
-    // If there isn't then set a provider
-    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545")); 
-    setTimeout(function(){location.reload(); }, 2000);
-
-    }else if(typeof web3 == 'undefined' && typeof Web3 == 'undefined'){
-
-    alert("Please Access Using MIST Browser Or Metamask");
-    console.log('No web3? You should consider trying MetaMask!');
-    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-
-  }
-
- 
-   // If no accounts are present, show the floating baloon
-   if ((!web3.eth.accounts || (web3.eth.accounts.length == 0))) {
-   alert("Please Enable your Wallet");
-   }else{}
-
-
-}
 
 $(document).ready(function(){
 
